@@ -21,7 +21,7 @@ GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', None)
 OPEN_API_KEY = os.getenv('OPEN_API_KEY', None)
 
 placeholderstr = "Please input your command"
-user_name = "Gild"
+user_name = "Yutong"
 user_image = "https://www.w3schools.com/howto/img_avatar.png"
 
 seed = 42
@@ -38,7 +38,7 @@ llm_config_openai = LLMConfig(
     api_key=OPEN_API_KEY,   # Authentication
 )
 
-with llm_config_openai:
+with llm_config_gemini:
     assistant = AssistantAgent(
         name="assistant",
         system_message=(
